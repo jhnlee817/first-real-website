@@ -49,3 +49,11 @@ a:hover {
 main {
     margin: 5rem;
 }
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    justify-items: center;
+
+}
