@@ -1,10 +1,12 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+const nav = document.querySelector(".nav");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY) {
+    nav.classList.add("nav--hidden")
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    nav.classList.remove("nav--hidden");
   }
-  prevScrollpos = currentScrollPos;
-}
+
+  lastScrollY = window.scrollY;
+});
