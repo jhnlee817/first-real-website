@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #009578;
+    background-color: #0bb0da80;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -34,6 +34,10 @@ body {
     text-decoration: none;
     margin: 0 1em;
     font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 1px solid white;
 }
 
 .hero-image {
