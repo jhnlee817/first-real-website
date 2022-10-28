@@ -81,6 +81,7 @@ img {
     object-fit: contain;
     object-position: center;
     background-color: beige;
+    margin-bottom: 10px;
 }
 
 .banner_responsive {
@@ -93,11 +94,11 @@ img {
 }
 
 .card-footer {
-    margin-top: 1rem;
+    top: 1rem;
 }
 
 .btn {
-    --color: #0bb0da80;
+    --color: #FF0000;
     background: var(--color);
     border: none;
     color: white;
@@ -105,10 +106,11 @@ img {
     padding: .5em .7em;
     border-radius: .25em;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .btn:hover, .btn:focus {
-    background:#77d1e780;
+    background:#f07777;
 }
 
 .btn-outline {
@@ -122,7 +124,8 @@ img {
 }
 
 .btn-outline:hover, .btn-outline:focus {
-    background: #95d0df80;
+    background: #1DA1F2;
+    color: white;
 }
 
 .btn + .btn-outline {
