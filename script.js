@@ -1,3 +1,7 @@
+window.onload = (Event) => {
+  console.log("hello world");
+
+
 const nav = document.querySelector(".nav");
 let lastScrollY = window.scrollY;
 
@@ -10,3 +14,5 @@ window.addEventListener("scroll", () => {
 
   lastScrollY = window.scrollY;
 });
+
+}
