@@ -70,12 +70,21 @@ a:hover {
     margin: 5rem;
 }
 
+.container-2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 5rem;
+    grid-template-rows: 1fr;
+}
+
 .card   {
     background: white; 
     padding: 1rem;
     border: none;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
     border-radius: .25rem;
+    min-width: 0;
 }
 
 .card-header {
@@ -92,7 +101,6 @@ img {
     object-position: center;
     background-color: beige;
     margin-bottom: 10px;
-    min-height: 55vh;
 }
 
 .card-image {
