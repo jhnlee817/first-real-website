@@ -6,13 +6,12 @@
 
 body {
     font-family: sans-serif;
-    padding-top: (50px);
-    min-height: 100%;
     background-image: url('images/banner.png');
     height: auto;
     width: auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: 100px;
     background-attachment: fixed;
 }
 
@@ -31,7 +30,7 @@ body {
 }
 
 .myth-banner {
-    margin-top: 75vh;
+    margin-top: 50vh;
 }
 
 .nav {
