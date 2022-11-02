@@ -7,12 +7,12 @@
 body {
     font-family: sans-serif;
     background-image: url('images/banner.png');
-    height: auto;
-    width: auto;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 100px;
+    background-position-y: 5rem;
     background-attachment: fixed;
+    height: auto;
+    width: auto;
 }
 
 
@@ -30,7 +30,7 @@ body {
 }
 
 .myth-banner {
-    margin-top: 50vh;
+    margin-top: 25rem;
 }
 
 .nav {
@@ -66,23 +66,6 @@ a:hover {
     font-size: 1.25em;
 }
 
-/* .hero-image {
-    display: grid;
-    justify-content: center;
-    padding: 5rem 5rem;
-    background-attachment: fixed;
-} */
-
-/* .hero-image {
-    background-image: url('images/banner.png');
-    height: 50vh;
-    width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
-} */
 
 
 .container {
@@ -118,7 +101,7 @@ a:hover {
 
 img {
     display: block;
-    width: 100%;;
+    width: 100%;
     aspect-ratio: auto;
     object-fit: contain;
     object-position: center;
@@ -193,6 +176,15 @@ img {
 
 
 @media all and (max-width: 576px) {
+    
+    body {
+
+    }
+    
+    h1 {
+        background-size: 100%;
+    }
+    
     .nav {
         font-size: 1.5em;
         display: flex;
@@ -214,7 +206,7 @@ img {
 
 @media all and (max-width: 768px) {
     
-    .nav {
+    /* .nav {
         height: 70%;
         display: flex;
         flex-direction: column;
@@ -224,7 +216,7 @@ img {
     
     .nav--hidden {
         transform: translateY(calc(-1 * 100%));
-    }
+    } */
 }
 
 @media all and (max-width: 992px) {
