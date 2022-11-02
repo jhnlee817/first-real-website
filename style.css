@@ -178,7 +178,7 @@ img {
 @media all and (max-width: 576px) {
     
     body {
-
+        background-size: 100%;
     }
     
     h1 {
@@ -206,7 +206,7 @@ img {
 
 @media all and (max-width: 768px) {
     
-    /* .nav {
+    .nav {
         height: 70%;
         display: flex;
         flex-direction: column;
@@ -216,7 +216,7 @@ img {
     
     .nav--hidden {
         transform: translateY(calc(-1 * 100%));
-    } */
+    }
 }
 
 @media all and (max-width: 992px) {
