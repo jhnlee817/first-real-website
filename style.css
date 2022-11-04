@@ -93,6 +93,10 @@ a:hover {
     min-width: 0;
 }
 
+.card:hover {
+    box-shadow: 5px 5px 5px 5px rgba(11, 176, 218, 0.5);
+}
+
 .card-header {
     font-size: 1.5rem;
     margin-bottom: .5rem;
