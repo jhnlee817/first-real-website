@@ -144,11 +144,6 @@ img {
     cursor: pointer;
 }
 
-.summary:hover {
-    
-
-}
-
 .btn {
     --color: #FF0000;
     background: var(--color);
