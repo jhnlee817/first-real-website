@@ -141,6 +141,12 @@ img {
 
 .summary {
     margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.summary:hover {
+    
+
 }
 
 .btn {
