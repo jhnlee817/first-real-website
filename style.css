@@ -29,27 +29,29 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
+
+
 .myth-banner {
     margin-top: 25rem;
-    animation: fadeInAnimation ease 2.25s;
+    animation: fadeInAnimation ease-in 2.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .hope-banner {
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease-in 2.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .council-banner {
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease-in 2.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .alum-banner {
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease-in 2.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -57,13 +59,33 @@ body {
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-50vw);
     }
 
     100% {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+.span-banner {
+    animation: leftToRight ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leftToRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+
 }
 
 .nav {
