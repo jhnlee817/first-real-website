@@ -9,9 +9,10 @@ body {
     background-image: url('images/banner.png');
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: center;
     background-attachment: fixed;
     background-size: 85vw 50vh;
+    background-color: ghostwhite;
 }
 
 main {
@@ -35,7 +36,7 @@ main {
     position: relative;
     display: block;
     white-space: normal;
-    bottom: 20rem;
+    bottom: 15rem;
     left: 2rem;
     animation: bottomUp ease 2s;
     animation-iteration-count: 1;
