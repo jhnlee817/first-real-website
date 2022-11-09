@@ -9,7 +9,7 @@ body {
     background-image: url('images/banner.png');
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: top;
     background-attachment: fixed;
     background-size: 85vw 50vh;
 }
@@ -17,7 +17,6 @@ body {
 main {
     margin-top: 100vh;
 }
-
 
 .h1 {
     display: flex;
@@ -32,7 +31,25 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
+.intro-text {
+    position: relative;
+    display: block;
+    white-space: normal;
+    bottom: 20rem;
+    left: 2rem;
+    animation: bottomUp ease 2s;
+    animation-iteration-count: 1;
+}
 
+@keyframes bottomUp{
+    0% {
+        opacity: 0;
+        transform: translateY(100%)
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .myth-banner {
     margin-top: 25rem;
