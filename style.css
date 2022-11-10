@@ -52,10 +52,6 @@ section {
     position: relative;
 }
 
-#section-1 {
-    
-}
-
 .scroll-btn {
     position: absolute;
     height: 10em;
@@ -190,13 +186,6 @@ section {
     margin: 0 1em;
     font-weight: bold;
 }
-
-/* a:hover {
-    border-bottom: 1px solid white;
-    font-size: 1.25em;
-} */
-
-
 
 .container {
     display: grid;
