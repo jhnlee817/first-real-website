@@ -11,7 +11,9 @@ body {
     background-position-x: center;
     background-position-y: center;
     background-attachment: fixed;
-    background-size: 85vw 50vh;
+    /* background-size: 85vw 50vh; */
+    background-size: cover;
+    background-size: contain;
     background-color: ghostwhite;
     overflow-x: hidden;
 }
@@ -336,6 +338,10 @@ ul {
 
 @media all and (max-width: 768px) {
     
+    body {
+        background-size: 85vw 50vh auto;
+    }
+
     .nav {
         height: 70%;
         display: flex;
@@ -354,5 +360,9 @@ ul {
 }
 
 @media all and (max-width: 1200px) {
+    body {
+        background-size: 85vw 50vh auto;
+    }
+
 
 }
