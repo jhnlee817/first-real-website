@@ -316,6 +316,56 @@ ul {
     h1 {
         background-size: 100%;
     }
+
+    .scroll-btn {
+        position: absolute;
+        height: 10em;
+        width: 6.25em;
+        border: 0.5em solid rgb(11, 177, 218);
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 16.25em;
+        border-radius: 3em;
+    }
+    
+    .scroll-btn:before {
+        position: absolute;
+        content: "";
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 1.2em;
+        height: 1.2em;
+        width: 1.2em;
+        background-color: rgb(11, 177, 218);
+        border-radius: 50%;
+        animation: move-down 2s infinite;
+    }
+    
+    @keyframes move-down {
+        80% {
+            opacity: 0.5;
+        }
+        100% {
+            transform: translateY(5.3em);
+            opacity: 0;
+        }
+    }
+    
+    .scroll-btn:after {
+        position: absolute;
+        content: "Down the rabbit hole?";
+        width: 12em;
+        display: block;
+        width: 12em;
+        text-align: center;
+        left: -4.2em;
+        bottom: -1.75em;
+        font-size: 1.6em;
+        color: rgb(11, 177, 218);
+        font-weight: 600;
+    }
     
     .nav {
         font-size: 1.5em;
@@ -331,7 +381,7 @@ ul {
         transform: translateY(calc(-1 * 100%));
     }
 
-    a:hover {
+    .nav__link:hover {
         font-size: 1.75em;
     }
 }
@@ -359,10 +409,45 @@ ul {
 
 }
 
-@media all and (max-width: 1200px) {
+@media all and (min-width: 1200px) {
     body {
-        background-size: 85vw 50vh auto;
+        background-size: 70vmax 50vmin auto;
     }
 
+    .scroll-btn {
+        position: absolute;
+        height: 6em;
+        width: 4.25em;
+        border: 0.5em solid rgb(11, 177, 218);
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 6.25em;
+        border-radius: 3em;
+    }
+    
+    .scroll-btn:before {
+        position: absolute;
+        content: "";
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 1.2em;
+        height: 1.2em;
+        width: 1.2em;
+        background-color: rgb(11, 177, 218);
+        border-radius: 50%;
+        animation: move-down 2s infinite;
+    }
+    
+    @keyframes move-down {
+        80% {
+            opacity: 0.5;
+        }
+        100% {
+            transform: translateY(1.8em);
+            opacity: 0;
+        }
+    }
 
 }
