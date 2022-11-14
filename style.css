@@ -11,11 +11,10 @@ body {
     background-position-x: center;
     background-position-y: center;
     background-attachment: fixed;
-    /* background-size: 85vw 50vh; */
-    background-size: cover;
     background-size: contain;
     background-color: ghostwhite;
     overflow-x: hidden;
+    height: 100%;
 }
 
 .h1 {
@@ -29,14 +28,6 @@ body {
     width: 100%;
     height: 4rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-}
-
-.intro-text {
-    position: relative;
-    top: 5em;
-    left: 1em;
-    animation: bottomUp ease 2s;
-    animation-iteration-count: 1;
 }
 
 @keyframes bottomUp{
@@ -409,10 +400,8 @@ ul {
 
 }
 
-@media all and (min-width: 1200px) {
-    body {
-        background-size: 70vmax 50vmin auto;
-    }
+@media (min-width: 1200px) {
+
 
     .scroll-btn {
         position: absolute;
@@ -422,7 +411,7 @@ ul {
         margin: auto;
         left: 0;
         right: 0;
-        bottom: 6.25em;
+        bottom: 4.25em;
         border-radius: 3em;
     }
     
