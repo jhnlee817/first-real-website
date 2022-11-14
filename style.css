@@ -180,6 +180,23 @@ section {
     font-weight: bold;
 }
 
+.menu-btn {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1em;
+    background-color: rgba(119, 207, 230, 0.5);
+    border: none;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
