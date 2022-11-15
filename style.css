@@ -184,6 +184,7 @@ ul {
     text-decoration: none;
     margin: 0 1em;
     font-weight: bold;
+    justify-content: space-between;
 }
 
 .nav__link:hover {
@@ -199,7 +200,12 @@ ul {
 
 #dropdown.active {
     display: flex;
+    gap: 50px;
+}
 
+li {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-btn {
@@ -467,7 +473,7 @@ ul {
         margin: auto;
         left: 0;
         right: 0;
-        bottom: 4.25em;
+        bottom: 3em;
         border-radius: 3em;
     }
     
@@ -493,6 +499,11 @@ ul {
             transform: translateY(1.8em);
             opacity: 0;
         }
+    }
+
+    #dropdown.active {
+        display: flex;
+        gap: 100px;
     }
 
 }
