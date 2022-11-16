@@ -342,6 +342,9 @@ ul {
     line-height: 1.5;
 }
 
+material-symbols-outlined {
+    font-size: 36px;
+}
 
 @media all and (max-width: 576px) {
     
