@@ -342,8 +342,14 @@ ul {
     line-height: 1.5;
 }
 
-material-symbols-outlined {
-    font-size: 36px;
+.arrow-btn {
+}
+
+#up-arrow {
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
 }
 
 @media all and (max-width: 576px) {
