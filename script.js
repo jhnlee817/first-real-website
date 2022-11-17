@@ -1,6 +1,4 @@
 window.onload = (Event) => {
-  console.log("hello world");
-
 
 const nav = document.querySelector(".nav");
 let lastScrollY = window.scrollY;
@@ -22,9 +20,7 @@ document.getElementById("menu").addEventListener("click", openMenu);
 function openMenu() {
   document.getElementById("dropdown").classList.toggle("active");
 }
-
-console.log(openMenu);
-
+  
 };
 
 // const menu = document.querySelector(".menu-btn");
@@ -41,3 +37,15 @@ console.log(openMenu);
 
 // });
 
+const backToTopButton = document.querySelector("#arrow-up");
+
+window.addEventListener("Scroll", scrollFunction);
+
+function scrollFunction() {
+  if (window.pageYOffset > 300)
+    backToTopButton.style.display = "block"
+  } else {
+    backToTopButton.style.display = "none";
+  }
+  
+  
