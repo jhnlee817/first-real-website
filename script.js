@@ -27,9 +27,17 @@ window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
   if (window.pageYOffset > 300) {
-    backToTopButton.style.display = "block";
+    if (!backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnExit");
+      backToTopButton.classList.add("btnEntrance");
+      backToTopButton.style.display = "block";
+    }
   } else {
-    backToTopButton.style.display = "none";
+    if (backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnEntrance");
+      backToTopButton.classList.add("btnExit");
+      backToTopButton.style.display = "none";
+    }
   }
 }
 
