@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
     background-image: url('images/banner.png');
@@ -56,6 +60,7 @@ body {
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     transition-property: background-color, color;
+    z-index: 4;
 }
 
 #arrow-up:hover, #arrow-up:focus {
@@ -81,10 +86,11 @@ section {
 @keyframes btnEntrance {
     from {
         opacity: 0;
-        transform: scale3d(0.3, 0.3, 0.3);
+        transform: translate3d(0, 100%, 0);
     }
     to {
         opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -100,7 +106,7 @@ section {
     }
     to {
         opacity: 0;
-        transform: scale3d(0.3, 0.3, 0.3);
+        transform: translate3d(0, 100%, 0);
     }
 }
 

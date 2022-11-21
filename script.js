@@ -36,7 +36,9 @@ function scrollFunction() {
     if (backToTopButton.classList.contains("btnEntrance")) {
       backToTopButton.classList.remove("btnEntrance");
       backToTopButton.classList.add("btnExit");
-      backToTopButton.style.display = "none";
+      setTimeout (function() {
+        backToTopButton.style.display = "none";
+      }, 250);
     }
   }
 }
