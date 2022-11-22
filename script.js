@@ -23,9 +23,12 @@ function openMenu() {
 
 const menuLeft = document.querySelector(".menu-btn");
 
+
+
 menuLeft.addEventListener("click", () => {
-    if (!menuLeft.classList.contains("active")) {
+    if (menuLeft.classList.contains("active")) {
       menuLeft.classList.remove("active");
+    } else {
       menuLeft.classList.add("active");
     }
 });
