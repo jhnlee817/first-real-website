@@ -266,6 +266,19 @@ ul {
 #dropdown.active {
     display: flex;
     gap: 50px;
+    animation: fadeInRight ease-in 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 li {
@@ -287,6 +300,22 @@ li {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.8em;
+}
+
+.menu-btn.active{
+    animation: menuLeft ease-in 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes menuLeft {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 
