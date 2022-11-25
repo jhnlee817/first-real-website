@@ -528,10 +528,55 @@ ul {
         font-size: 1.1em;
     }
 
+    .menu-btn {
+        animation: menuRight ease-in 0.5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes menuRight {
+        from {
+            opacity: 0;
+            transform: translateY(-200px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .menu-btn.active{
+        animation: menuLeft ease-in 0.5s;
+        animation-fill-mode: both;
+    }
+    
+    @keyframes menuLeft {
+        from {
+            opacity: 0;
+            transform: translateY(-200px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
     #dropdown.active {
         display:flex;
         flex-direction: column;
         height: 50%;
+        animation: fadeInRight ease-in 0.5s;
+        animation-fill-mode: both;
+    }
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+        }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        }
     }
 }
 
@@ -561,7 +606,52 @@ ul {
         display:flex;
         flex-direction: column;
         height: 50%;
+        animation: fadeInRight ease-in .5s;
+        animation-fill-mode: both;
     }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateY(-200px);
+            }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+            }
+        }
+
+        .menu-btn.active{
+            animation: menuLeft ease-in 0.5s;
+            animation-fill-mode: both;
+        }
+        
+    @keyframes menuLeft {
+        from {
+            opacity: 0;
+            transform: translateY(-200px);
+            }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+            }
+        }
+
+        .menu-btn {
+            animation: menuRight ease-in 0.5s;
+            animation-fill-mode: both;
+        }
+    
+    @keyframes menuRight {
+        from {
+            opacity: 0;
+            transform: translateY(-200px);
+            }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+            }
+        }
 
 }
 
