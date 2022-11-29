@@ -10,6 +10,9 @@ html {
 
 body {
     font-family: sans-serif;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(images/calliopecard.png) no-repeat;
+    height: 100%;
+    background-position: 50% -10%;
 }
 
 
@@ -26,7 +29,7 @@ body {
 
 .calli-name {
     animation: flipInX;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
 }
 
 @keyframes flipInX {
@@ -46,11 +49,20 @@ body {
     }
  } 
 
- .calli-background {
+ .bio-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    opacity: .1;
+    padding-top: 10rem;
+ }
+
+ .bio-img {
+    height: 35rem;
+ }
+
+ .bio-text {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: -15rem;
  }
 
 #left-arrow {
