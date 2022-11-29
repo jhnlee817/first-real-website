@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.calli-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: rgba(11, 176, 218, 0.5);
+    background-color: rgba(11, 176, 218, 0.5);
+    color: #fff;
+}
+
+#left-arrow {
+    margin-left: .5rem;
+    margin-top: 1px;
+    color: #fff;
+    position: fixed;
+}
+
+#left-arrow:hover {
+    cursor: pointer;
+}
