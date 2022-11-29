@@ -12,6 +12,7 @@ body {
     font-family: sans-serif;
 }
 
+
 .calli-header {
     display: flex;
     justify-content: center;
@@ -45,6 +46,13 @@ body {
     }
  } 
 
+ .calli-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .1;
+ }
+
 #left-arrow {
     margin-left: .5rem;
     margin-top: 1px;
@@ -54,4 +62,14 @@ body {
 
 #left-arrow:hover {
     cursor: pointer;
+}
+
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 992px) {
 }
