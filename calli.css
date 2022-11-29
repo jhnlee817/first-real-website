@@ -23,6 +23,28 @@ body {
     color: #fff;
 }
 
+.calli-name {
+    animation: flipInX;
+    animation-duration: 1.25s;
+}
+
+@keyframes flipInX {
+    0% {
+       transform: perspective(400px) rotateX(90deg);
+       opacity: 0;
+    }
+    40% {
+       transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+       transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+       transform: perspective(400px) rotateX(0deg);
+       opacity: 1;
+    }
+ } 
+
 #left-arrow {
     margin-left: .5rem;
     margin-top: 1px;
