@@ -402,6 +402,8 @@ img {
 
 .card-footer {
     top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .summary {
@@ -442,6 +444,31 @@ img {
 
 .btn + .btn-outline {
     margin-left: .75rem;
+}
+
+.learn-button {
+    --color: #0bb0da80;
+    background: var(--color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: .5em .7em;
+    border-radius: .25em;
+    cursor: pointer;
+    display: flex;
+}
+
+.learn-button:hover, .learn-button:focus {
+    background: rgb(65, 240, 152);
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
 }
 
 ul {
