@@ -60,10 +60,52 @@ body {
  }
 
  .bio-text {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-top: -15rem;
  }
+
+ .calli-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+ }
+
+ .calli-youtube {
+    --color: #FF0000;
+    background: var(--color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: .5em .7em;
+    border-radius: .25em;
+    cursor: pointer;
+ }
+
+ .calli-youtube:hover, .calli-youtube:focus {
+    background:#f07777;
+}
+
+.calli-twitter {
+    background: none;
+    border: 1px solid #0bb0da80;
+    color: #0bb0da80;
+    font-size: 1rem;
+    padding: .5em .7em;
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.calli-twitter:hover, .calli-twitter:focus {
+    background: #1DA1F2;
+    color: white;
+}
+
+.calli-youtube + .calli-twitter {
+    margin-left: .75rem;
+}
+
 
 #left-arrow {
     margin-left: .5rem;
@@ -78,6 +120,14 @@ body {
 
 
 @media (max-width: 576px) {
+
+    .bio-img {
+        height: 25rem;
+    }
+
+    .bio-text {
+        padding-top: 15rem;
+    }
 }
 
 @media (max-width: 768px) {
