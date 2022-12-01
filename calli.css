@@ -49,7 +49,7 @@ body {
     }
  } 
 
- .bio-container {
+.bio-container {
     display: flex;
     align-items: center;
     padding-top: 10rem;
@@ -67,11 +67,11 @@ body {
     }
  }
 
- .bio-img {
+.bio-img {
     height: 35rem;
  }
 
- .bio-text {
+.bio-text {
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: -15rem;
@@ -79,14 +79,14 @@ body {
     color: rgb(10, 60, 134)
  }
 
- .calli-buttons {
+.calli-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
  }
 
- .calli-youtube {
+.calli-youtube {
     --color: #FF0000;
     background: var(--color);
     border: none;
@@ -97,7 +97,7 @@ body {
     cursor: pointer;
  }
 
- .calli-youtube:hover, .calli-youtube:focus {
+.calli-youtube:hover, .calli-youtube:focus {
     background:#f07777;
 }
 
@@ -118,6 +118,34 @@ body {
 
 .calli-youtube + .calli-twitter {
     margin-left: .75rem;
+}
+
+.video-container {
+    background-color: rgb(41, 167, 108);
+    padding: 2em;
+    margin-right: 4em;
+    height: 30em;
+    border: none;
+    border-radius: 1em;
+    margin-left: .5em;
+    animation: videoInRight ease-in 1s;
+}
+
+@keyframes videoInRight {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.video-text {
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 
