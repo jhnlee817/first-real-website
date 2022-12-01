@@ -53,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     padding-top: 10rem;
-    animation: slideInRight  ease 1s;
+    animation: slideInRight  ease-in 1.25s;
  }
 
  @keyframes slideInRight{
@@ -121,19 +121,16 @@ body {
 }
 
 .video-container {
-    background-color: rgb(41, 167, 108);
+    background-color: rgb(114, 218, 169);
     padding: 2em;
-    margin-right: 4em;
-    height: 25em;
     border: none;
-    border-radius: 1em;
-    margin-left: .5em;
-    animation: videoInRight ease-in 1s;
+    width: 100%;
+    animation: videoInRight ease-in 1.25s;
 }
 
 @keyframes videoInRight {
     from {
-        transform: translateX(-200px);
+        transform: translateX(-25em);
     }
     to {
         transform: translateX(0);
@@ -151,6 +148,11 @@ body {
 
 .video-embed {
     margin-right: 1em;
+    margin-top: 1em;
+}
+
+.modal-button {
+    border: none;
 }
 
 #left-arrow {
@@ -179,5 +181,5 @@ body {
 @media (max-width: 768px) {
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 }
