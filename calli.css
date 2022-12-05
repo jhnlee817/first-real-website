@@ -168,10 +168,12 @@ body {
 }
 
 .modal-close {
-    position: relative;
+    position: fixed;
     color: white;
     font-size: 28px;
     font-weight: bold;
+    top: 1em;
+    right: 2rem;
 }
 
 .modal-close:hover, .modal-close:focus {
@@ -198,12 +200,17 @@ body {
     cursor: pointer;
 }
 
+
 @media (max-width: 1200px) {
     .modal {
         padding-left: 5em;
     }
     .iframe-video {
         margin-left: 1em;
+    }
+    .modal-close {
+        top: 5rem;
+        right: 10rem;
     }
 }
 
@@ -215,6 +222,10 @@ body {
         margin-left: 1em;
         height: 35em;
         width: 40em;
+    }
+    .modal-close {
+        top: 5rem;
+        right: 5rem;
     }
 }
 
@@ -246,6 +257,10 @@ body {
         width: 20em;
         height: 15em;
         padding-bottom: 0;
+    }
+    .modal-close {
+        top: 15rem;
+        right: 1rem;
     }
 }
 
