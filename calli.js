@@ -17,6 +17,27 @@ window.onclick = function(event) {
     }
 }
 
+var modal2 = document.querySelector(".popup-video2");
+var btn2= document.querySelector(".video2");
+var span2 = document.querySelector(".close2");
+
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+span2.onclick = function() {
+   modal2.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+
+
+
 
 // var modal = document.getElementById("video-modal");
 // var btn = document.getElementById("modal-button");
