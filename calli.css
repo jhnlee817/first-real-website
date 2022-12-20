@@ -127,7 +127,7 @@ body {
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
-    min-height: 100vh;
+    min-height: 60vh;
     background: #334;
     animation: slideInLeft ease 1.25s;
 }
@@ -189,6 +189,16 @@ body {
     height: 100%;
     width: 100%;
     display: none;
+    animation: popupAni ease-in .25s;
+}
+
+@keyframes popupAni {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .container .popup-video iframe {
@@ -244,6 +254,7 @@ body {
     height: 100%;
     width: 100%;
     display: none;
+    animation: popupAni ease-in .25s;
 }
 
 .container .popup-video2 iframe {
@@ -299,6 +310,7 @@ body {
     height: 100%;
     width: 100%;
     display: none;
+    animation: popupAni ease-in .25s;
 }
 
 .container .popup-video3 iframe {
