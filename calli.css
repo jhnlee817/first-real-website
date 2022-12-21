@@ -347,6 +347,55 @@ body {
     cursor: pointer;
 }
 
+.data-calli {
+    background-color: #f0f0fa;
+    padding: 100px 0;
+}
+
+.data-calli .data-container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.data-calli h2 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #063f5c;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1em;
+    letter-spacing: .3em;
+    margin-bottom: 2rem;
+}
+
+.data-calli dl {
+    display: table;
+    width: 100%;
+    text-align: left;
+    color: #063f5c;
+    font-weight: bold;
+    border-bottom: 1px solid #063f5c;
+}
+
+.data-calli dt {
+    display: table-cell;
+    width: 10em;
+    font-size: 20px;
+    line-height: 2em;
+    padding: 20px 24px;
+    position: relative;
+}
+
+.data-calli dd {
+    display: table-cell;
+    width: 10em;
+    font-size: 16px;
+    line-height: 2em;
+    padding: 20px 24px;
+}
+
+
 
 @media (max-width: 1200px) {
 }
