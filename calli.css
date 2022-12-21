@@ -395,6 +395,10 @@ body {
     padding: 20px 24px;
 }
 
+.data-calli dd a:visited {
+    color: #063f5c;
+}
+
 
 
 @media (max-width: 1200px) {
