@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(images/faunacard.png) no-repeat;
+    height: 100%;
+    background-position: 50% 10%;
+}
+
+
+.calli-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: rgba(11, 176, 218, 0.5);
+    background-color: rgba(11, 176, 218, 0.5);
+    color: #fff;
+}
+
+.calli-name {
+    animation: flipInX;
+    animation-duration: 2s;
+}
+
+@keyframes flipInX {
+    0% {
+       transform: perspective(400px) rotateX(90deg);
+       opacity: 0;
+    }
+    40% {
+       transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+       transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+       transform: perspective(400px) rotateX(0deg);
+       opacity: 1;
+    }
+ } 
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+    animation: slideInRight  ease 1.25s;
+ }
+
+ @keyframes slideInRight{
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+.bio-img {
+    height: 35rem;
+ }
+
+.bio-text {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: -15rem;
+    font-size: large;
+    color: rgb(10, 60, 134)
+ }
+
+.calli-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+ }
+
+.calli-youtube {
+    --color: #FF0000;
+    background: var(--color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: .5em .7em;
+    border-radius: .25em;
+    cursor: pointer;
+ }
+
+.calli-youtube:hover, .calli-youtube:focus {
+    background:#f07777;
+}
+
+.calli-twitter {
+    background: none;
+    border: 1px solid #0bb0da80;
+    color: #0bb0da80;
+    font-size: 1rem;
+    padding: .5em .7em;
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.calli-twitter:hover, .calli-twitter:focus {
+    background: #1DA1F2;
+    color: white;
+}
+
+.calli-youtube + .calli-twitter {
+    margin-left: .75rem;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    min-height: 60vh;
+    background: #334;
+    animation: slideInLeft ease 1.25s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.container h1 {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .video-container .video {
+    height: 252px;
+    width: 448px;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .video-container .video img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .video-container .video:hover img {
+    transform: scale(1.1)
+}
+
+.container .popup-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    display: none;
+    animation: popupAni ease-in .25s;
+}
+
+@keyframes popupAni {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.container .popup-video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 400px;
+    border-radius: 5px;
+    border: 0px solid #fff;
+    object-fit: cover;
+}
+
+.container .popup-video span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.container .video-container .video2 {
+    height: 252px;
+    width: 448px;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .video-container .video2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .video-container .video2:hover img {
+    transform: scale(1.1)
+}
+
+.container .popup-video2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    display: none;
+    animation: popupAni ease-in .25s;
+}
+
+.container .popup-video2 iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 400px;
+    border-radius: 5px;
+    border: 0px solid #fff;
+    object-fit: cover;
+}
+
+.container .popup-video2 span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.container .video-container .video3 {
+    height: 252px;
+    width: 448px;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .video-container .video3 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .video-container .video3:hover img {
+    transform: scale(1.1)
+}
+
+.container .popup-video3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    display: none;
+    animation: popupAni ease-in .25s;
+}
+
+.container .popup-video3 iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 400px;
+    border-radius: 5px;
+    border: 0px solid #fff;
+    object-fit: cover;
+}
+
+.container .popup-video3 span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#left-arrow {
+    margin-left: .5rem;
+    margin-top: 1px;
+    color: #fff;
+    position: fixed;
+}
+
+#left-arrow:hover {
+    cursor: pointer;
+}
+
+.data-calli {
+    background-color: #f0f0fa;
+    padding: 100px 0;
+}
+
+.data-calli .data-container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.data-calli h2 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #063f5c;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1em;
+    letter-spacing: .3em;
+    margin-bottom: 2rem;
+}
+
+.data-calli dl {
+    display: table;
+    width: 100%;
+    text-align: left;
+    color: #063f5c;
+    font-weight: bold;
+    border-bottom: 1px solid #063f5c;
+}
+
+.data-calli dt {
+    display: table-cell;
+    width: 10em;
+    font-size: 20px;
+    line-height: 2em;
+    padding: 20px 24px;
+    position: relative;
+}
+
+.data-calli dd {
+    display: table-cell;
+    width: 10em;
+    font-size: 16px;
+    line-height: 2em;
+    padding: 20px 24px;
+}
+
+.data-calli dd a:visited {
+    color: #063f5c;
+}
+
+
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+
+    .container .popup-video iframe {
+        width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .bio-img {
+        height: 25rem;
+    }
+
+    .bio-text {
+        padding-top: 15rem;
+    }
+}
+
