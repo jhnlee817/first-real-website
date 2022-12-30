@@ -1,11 +1,3 @@
-let btnBack = document.querySelector('left-arrow');
-
-btnBack.addEventListener('click', () => {
-    window.history.back(index.html);
-});
-
-
-
 var modal = document.querySelector(".popup-video");
 var btn = document.querySelector(".video");
 var span = document.querySelector(".close");

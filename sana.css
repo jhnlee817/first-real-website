@@ -10,14 +10,9 @@ html {
 
 body {
     font-family: sans-serif;
-    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(images/calliopecard.png) no-repeat;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(images/sanacard.png) no-repeat;
     height: 100%;
-    background-position: 75% -10%;
-}
-
-.back-button {
-    top: 1rem;
-    left: 1rem;
+    background-position: 75% 0%;
 }
 
 
@@ -53,8 +48,6 @@ body {
        opacity: 1;
     }
  } 
-
- 
 
 .bio-container {
     display: flex;
